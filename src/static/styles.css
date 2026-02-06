@@ -157,8 +157,8 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
   max-height: 120px;
   overflow-y: auto;
@@ -172,6 +172,29 @@ footer {
   font-size: 14px;
   color: #444;
   border: 1px solid rgba(0,0,0,0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participants-list span {
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 8px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
 }
 
 /* Slightly muted text when no participants */
